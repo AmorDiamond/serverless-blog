@@ -34349,7 +34349,6 @@ var import_bcryptjs = __toESM2(require_bcryptjs());
 // src/utils/jwt.ts
 var import_jsonwebtoken = __toESM2(require_jsonwebtoken());
 var secret2 = process.env.JWT_SECRET;
-console.log("secret", secret2);
 function signToken(id) {
   if (!secret2)
     throw new Error("Environment variable JWT_SECRET is not defined!");

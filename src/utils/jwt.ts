@@ -2,7 +2,6 @@ import jwt from 'jsonwebtoken';
 
 const secret = process.env.JWT_SECRET;
 // const secret = 'helloworld';
-console.log('secret', secret);
 
 export function signToken(id: number) {
   if (!secret) throw new Error('Environment variable JWT_SECRET is not defined!');
