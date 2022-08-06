@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
-// const secret = process.env.JWT_SECRET;
-const secret = 'helloworld';
+const secret = process.env.JWT_SECRET;
+// const secret = 'helloworld';
 console.log('secret', secret);
 
 export function signToken(id: number) {
